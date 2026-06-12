@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float radius,side,length,width;
+    scanf("%f %f %f %f",&radius,&side,&length,&width);
+    float areac=3.1416*radius*radius;
+    float perimeterc=2*3.1416*radius;
+    float areas=side*side;
+   float perimeters=4*side;
+    float arear=length*width;
+   float perimeterr=2*(length+width);
+    printf("Circle: %.2f %.2f\n",areac,perimeterc);
+    printf("Square: %.2f %.2f\n",areas,perimeters);
+    printf("Rectangle: %.2f %.2f\n",arear,perimeterr);
+    return 0;
+}
