@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#include<string.h>
+int main (){
+    int u;
+    float bill,totalbill;
+    scanf("%d",&u);
+    if(u<=50){
+        bill=(u*0.50);
+        totalbill=bill+(0.20*bill);
+        printf("%.2f",totalbill);
+    }
+    else if(u<=150){
+        bill=(50*0.50)+((u-50)*0.75);
+        totalbill=bill+(0.20*bill);
+        printf("%.2f",totalbill);
+    }
+    else if(u<=250){
+        bill=(50*0.50)+(100*0.75)+((u-150)*1.20);
+        totalbill=bill+(0.20*bill);
+        printf("%.2f",totalbill);
+    }
+    else if(u<=500){
+        bill=(50*0.50)+(100*0.75)+(100*1.20)+((u-250)*1.50);
+        totalbill=bill+(0.20*bill);
+        printf("%.2f",totalbill);
+    }
+    return 0;
+}
