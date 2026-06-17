@@ -1,4 +1,4 @@
-# 💻 **Harshit C Programming**
+# 💻 **Harshit-C-Programming**
 
 🚀 **Welcome to my C Programming Repository!**
 
