@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int num,key=0,count=0;
+    scanf("%d",&num);
+    int arr[num];
+    for(int i=0;i<num;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&key);
+    for(int i=0;i<num;i++){
+        if(arr[i]==key){
+            count++;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
