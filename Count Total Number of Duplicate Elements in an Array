@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int num,count=0;
+    scanf("%d",&num);
+    int arr[num];
+    for(int i=0;i<num;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<num;i++){
+        int found=0;
+        for(int j=i+1;j<num;j++){
+            if(arr[i]==arr[j]){
+                found=1;
+                break;
+            }
+        }
+        for(int k=0;k<i&&found;k++){
+            if(arr[i]==arr[k]){
+                found=0;
+                break;
+            }
+        }
+        if(found){
+            count++;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
